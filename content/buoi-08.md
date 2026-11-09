@@ -2,6 +2,7 @@
 so: 8
 tieu_de: "Tối ưu hệ thống và mở rộng quy mô"
 mo_ta: "Triển khai nhanh, dùng Performance Waterfall tìm đúng lỗi của video, tái sử dụng nội dung cũ và vận hành YouTube như một hệ thống dữ liệu."
+hinh: "Performance Waterfall kiểm tra lần lượt ý tưởng, packaging, hook, kịch bản để tìm đúng chỗ hỏng, rồi mới mở rộng hệ thống."
 ---
 
 ## Mục tiêu buổi học

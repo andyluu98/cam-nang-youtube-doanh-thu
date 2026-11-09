@@ -2,6 +2,7 @@
 so: 3
 tieu_de: "Đóng gói video bằng tiêu đề và thumbnail"
 mo_ta: "Giúp bạn viết tiêu đề, thiết kế thumbnail đúng khách hàng mục tiêu, thử nghiệm hai vòng và đóng gói lại video đang chạy tốt."
+hinh: "Trên kệ hàng đầy video, tiêu đề và thumbnail quyết định người xem chọn video nào; A/B testing giúp chọn phương án tốt hơn."
 ---
 
 ## Mục tiêu buổi học

@@ -2,6 +2,7 @@
 so: 6
 tieu_de: "Xây dựng và quản lý đội ngũ content"
 mo_ta: "Giúp bạn thiết kế quy trình trước khi tuyển, dự trù chi phí nhân sự, chọn agency hay đội nội bộ và điều hành họp tuần."
+hinh: "Quy trình sáu bước như một dây chuyền, mỗi trạm có một người chịu trách nhiệm, cả đội họp vào đầu tuần."
 ---
 
 ## Mục tiêu buổi học

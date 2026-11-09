@@ -1,6 +1,7 @@
 ---
 tieu_de: "Cẩm nang xây dựng kênh YouTube tạo ra doanh thu cho doanh nghiệp"
 mo_ta: "Giáo trình 8 buổi: từ xác định khách hàng, chiến lược nội dung, đóng gói video tới đội ngũ, đo doanh thu và mở rộng quy mô."
+hinh: "Video đúng người xem dẫn khách hàng từ màn hình tới cửa hàng: lượt xem chỉ có giá trị khi biến thành doanh thu."
 ---
 
 ## Lượt xem không phải là đích đến

@@ -2,6 +2,7 @@
 so: 2
 tieu_de: "Chiến lược nội dung: nên đăng những gì"
 mo_ta: "Phân bổ video theo phễu và mức độ nhận thức, chọn ý tưởng theo tỷ lệ 70-20-10 và làm đủ video cuối phễu để kênh ra doanh thu."
+hinh: "Ý tưởng của nhà sáng lập đi vào phễu: nhiều video đầu phễu, ít hơn ở giữa, và video cuối phễu tạo ra đơn hàng."
 ---
 
 ## Mục tiêu buổi học

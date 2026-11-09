@@ -2,6 +2,7 @@
 so: 7
 tieu_de: "Biến lượt xem thành doanh thu"
 mo_ta: "Đo lượt xem và MQL từng video, đặt CTA đúng chỗ, dựng YouTube VSL và kiên nhẫn với chu kỳ chuyển đổi để lượt xem ra doanh thu."
+hinh: "CTA đặt ở nhiều vị trí trong video, tracking link nối video với lịch hẹn và doanh thu, QR code cho người xem trên TV."
 ---
 
 ## Mục tiêu buổi học

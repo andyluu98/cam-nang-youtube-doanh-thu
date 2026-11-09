@@ -2,6 +2,7 @@
 so: 1
 tieu_de: "Xác định đúng đối tượng khách hàng"
 mo_ta: "Biết khách hàng tốt nhất là ai, hiểu họ đủ sâu và nói đúng ngôn ngữ của họ để mỗi video YouTube đưa người xem tới gần quyết định mua."
+hinh: "Chọn đúng khách hàng tốt nhất giữa đám đông, rồi đưa họ đi qua ba bậc: biết đến, yêu thích, tin tưởng."
 ---
 
 ## Mục tiêu buổi học

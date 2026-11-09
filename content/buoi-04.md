@@ -2,6 +2,7 @@
 so: 4
 tieu_de: "Viết kịch bản và hook giữ chân người xem"
 mo_ta: "Giúp bạn viết phần mở đầu theo 4 thành phần, chọn giọng điệu đúng người nghe và dùng open loop để người xem ở lại tới cuối video."
+hinh: "Phần mở đầu là lưỡi câu giữ sự chú ý; open loop để lại một câu hỏi mở khiến người xem ở lại tới cuối."
 ---
 
 ## Mục tiêu buổi học

@@ -90,6 +90,12 @@ blockquote p:last-child { margin-bottom: 0; }
 .callout-vi-du .callout-label { color: var(--note); }
 .callout-tom-tat { border: 1px solid var(--line); border-left: 4px solid var(--ink); font-size: 18px; }
 
+/* Hình minh họa */
+.illus { margin: 26px 0 8px; }
+.illus img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; background: #fff; border: 1px solid var(--line); }
+.illus figcaption { font-size: 14px; line-height: 1.55; color: var(--muted); margin-top: 10px; padding-left: 12px; border-left: 3px solid var(--accent); }
+.hero .illus { max-width: 980px; margin-top: 34px; }
+
 /* Mục tiêu */
 .goals { list-style: none; padding: 0; display: grid; gap: 8px; }
 .goals li { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px 10px 42px; position: relative; margin: 0; }

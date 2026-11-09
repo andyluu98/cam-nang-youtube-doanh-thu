@@ -2,6 +2,7 @@
 so: 5
 tieu_de: "Dựng video và tối ưu trải nghiệm"
 mo_ta: "Giúp bạn đặt chuẩn dựng video cho đội ngũ, đọc biểu đồ giữ chân để sửa video sau và rút ngắn thời gian sản xuất."
+hinh: "Biểu đồ giữ chân người xem chỉ ra đoạn người xem rời đi; phản hồi cụ thể tới từng giây giúp biên tập viên sửa đúng chỗ."
 ---
 
 ## Mục tiêu buổi học

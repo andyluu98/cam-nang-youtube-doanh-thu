@@ -75,7 +75,15 @@ def sections(html_body):
     return parts
 
 
-def enhance(html_body, page_key):
+def figure(key, caption):
+    if not caption or not (ROOT / "assets" / "img" / f"{key}.webp").exists():
+        return ""
+    c = html.escape(caption)
+    return (f'<figure class="illus"><img src="assets/img/{key}.webp" alt="{c}" width="1600" height="900" '
+            f'loading="lazy" decoding="async"><figcaption>{c}</figcaption></figure>')
+
+
+def enhance(html_body, page_key, caption=""):
     out = []
     for part in sections(html_body):
         title = re.search(r'<h2 id="[^"]*">(.*?)</h2>', part)
@@ -84,6 +92,7 @@ def enhance(html_body, page_key):
             part = part.replace("<ul>", '<ul class="goals">', 1)
         elif t == "Tóm tắt 30 giây":
             part = part.replace("<blockquote>", '<blockquote class="callout-tom-tat">', 1)
+            part += figure(page_key, caption)
         elif t == "Checklist áp dụng":
             idx = [0]
 
@@ -159,12 +168,12 @@ def main():
     for f in sorted(CONTENT.glob("buoi-*.md")):
         meta, body = read(f)
         lessons.append({"key": f.stem, "so": int(meta.get("so", f.stem[-2:])), "tieu_de": meta["tieu_de"],
-                        "mo_ta": meta.get("mo_ta", ""), "body": body})
+                        "mo_ta": meta.get("mo_ta", ""), "hinh": meta.get("hinh", ""), "body": body})
     lessons.sort(key=lambda l: l["so"])
 
     for i, l in enumerate(lessons):
         content, toc = render(l["body"])
-        content = enhance(content, l["key"])
+        content = enhance(content, l["key"], l["hinh"])
         prev = lessons[i - 1] if i > 0 else None
         nxt = lessons[i + 1] if i + 1 < len(lessons) else None
         pager = '<nav class="pager" aria-label="Chuyển buổi">'
@@ -200,7 +209,9 @@ def main():
     hero = (f'<section class="hero"><p class="kicker">Giáo trình 8 buổi</p><h1>{html.escape(meta["tieu_de"])}</h1>'
             f'<p class="lede">{html.escape(meta["mo_ta"])}</p>'
             '<ul class="meta"><li>8 buổi học</li><li>Bài tập thực hành mỗi buổi</li><li>Checklist áp dụng</li>'
-            '<li>Câu hỏi tự kiểm tra</li></ul></section>')
+            '<li>Câu hỏi tự kiểm tra</li></ul>'
+            + figure("trang-chu", meta.get("hinh", "")).replace(' loading="lazy"', ' fetchpriority="high"')
+            + '</section>')
     home = (f'<div class="home"><div class="home-text">{content}</div>'
             f'<h2 id="lo-trinh">Lộ trình 8 buổi</h2><ol class="course-map">{cards}</ol></div>')
     (ROOT / "index.html").write_text(page(meta["tieu_de"], meta["mo_ta"], "index", lessons, hero + home), encoding="utf-8")
